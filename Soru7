@@ -1,0 +1,24 @@
+7.Soru=Klavyeden okunan en fazla dört basamaklı bir pozitif tam sayının çarpanlarına ayıran program.
+
+	import java.util.Scanner;
+	public class Soru7 {
+	public static void main(String[] args) {
+	
+	int say;
+	Scanner tara = new Scanner(System.in);
+	do {
+	say=0;
+	System.out.print("En fazla 4 basamaklı sayı giriniz: ");
+	say = tara.nextInt();
+	}
+	while(String.valueOf(say).length() > 4);
+	tara.close();
+	for(int i=1; i<=say;i++)
+	{
+	if(sayi%i==0)
+	{
+	System.out.println(i + " x " + (say/i) + " = " + say);
+	}
+	}
+	}
+	}
