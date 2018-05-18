@@ -1,0 +1,21 @@
+12.Soru=Girilen üç sayının en büyüğünü bulan program.
+
+ 
+import java.util.*;
+public class Soru12 {
+ 
+    public static void main(String[] args) {
+      
+Scanner input=new Scanner(System.in);
+İnt sayibir, sayiiki,sayiuc;
+System.out.print("Birinci sayıyı giriniz:");
+Sayibir=input.nextInt();
+System.out.print(“ikinci sayıyı giriniz:");
+Sayiiki=input.nextInt();
+System.out.print("üçüncü sayıyı giriniz:");
+Sayiuc=input.nextInt();
+İnt biriki=Math.max(sayibir,sayiiki);
+İnt ikiuc=Math.max(biriki,sayiuc);
+System.out.println("En Büyük Sayı="+ikiuc);
+}
+}
