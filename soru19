@@ -1,0 +1,19 @@
+19.Soru:int türünden bir dizinin en büyük elemanını bulup ekrana yazdıran program.
+
+	public class soru19 {
+	public static void bul(int[] data) {
+	int sayi=data[0];
+	for(int i=0; i<data.length; i++)
+	{
+	if(sayi<data[i])
+	sayi=data[i];
+	}
+	System.out.println("En büyük sayı: " + sayi);
+	}
+	public static void main(String[] args) {
+	
+	int [] dizi = {8,77,61,18,20};
+	bul(dizi);
+	}
+	
+	}
