@@ -1,0 +1,19 @@
+20.Soru: int türünden bir dizinin elemanlarını tekler ve çiftler olmak üzere ayrı ayrı yazan program.
+
+	public class soru20 {
+	public static void ayirt(int[] data){
+	System.out.println("Tek sayılar:");
+	for(int i=0; i<data.length; i++)
+	if(data[i]%2!=0)
+	System.out.println(data[i]);
+	System.out.println("------------\nÇift sayılar:");
+	for(int i=0; i<data.length; i++)
+	if(data[i]%2==0)
+	System.out.println(data[i]); 
+	}
+	public static void main(String[] args) {
+	
+	int [] dizi = {56,69,15,22,78,75,120};
+	ayirt(dizi); 
+	}
+	}
