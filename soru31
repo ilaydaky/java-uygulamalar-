@@ -1,0 +1,24 @@
+31.soru:Klavyeden girilen 10 sayıdan en büyüğünü ve en küçüğünü bulan programı yazınız.
+        int sayi = 0;
+        int min, max;
+
+        //hem min hem de max'a ilk sayiyi atiyoruz
+        System.out.println("Bir sayi giriniz");
+        sayi = klavye.nextInt();
+        min = max = sayi;
+
+        while (sayi >= 10) {
+            if (sayi > max) {
+                max = sayi;
+            }
+            if (sayi < min) {
+                min = sayi;
+            }
+            //okuma islemini en sonda yapiyoruz ki
+            //negatif sayi girildiginde min olarak atanmasin
+            System.out.println("Bir sayi giriniz");
+            sayi = klavye.nextInt();
+        }
+        System.out.println("MAX=" + max + "\nMIN=" + min);
+    }
+}
