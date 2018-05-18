@@ -1,0 +1,19 @@
+5.Soru=Klavyeden  girilen bir ifadeyi istenen sayı kadar ekrana yazan program.
+
+	import java.util.Scanner;
+	public class Soru5 {
+	public static void main(String[] args) {
+	
+	int i;
+	String yaz;
+	Scanner tara = new Scanner(System.in);
+	System.out.print("Hangi kelimenin girilmesini istersiniz? : ");
+	soyle = tara.nextLine();
+	System.out.print("Kaç defa tekrarlansın? : ");
+	i = tara.nextInt();
+	tara.close();
+	for (int j=0; j<i; j++)
+	System.out.println(yaz);
+	}
+	}
+
