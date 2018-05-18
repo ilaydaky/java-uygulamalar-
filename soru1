@@ -1,0 +1,16 @@
+1.Soru:Klavyeden 15 sayısı girilene kadar sayıları toplayıp sonucu ekrana yazan program.
+import java.util.Scanner;
+
+public class Soru1 {
+public static void main(String[] args) {
+        Scanner klavye = new Scanner(System.in);
+        int sayi=0, toplam=0;
+
+        while(sayi=15){
+            toplam += sayi;
+            System.out.println("Bir sayi gir");
+            sayi = klavye.nextInt();
+        }
+        System.out.println("toplam = " + toplam);
+    }
+}
