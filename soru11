@@ -1,0 +1,15 @@
+11.Soru=Girilen cümledeki küçük harfleri büyük harfe çeviren program.
+
+
+ 
+import java.util.*;
+public class Soru11 {
+ 
+    public static void main(String[] args) {
+      
+Scanner input=new Scanner(System.in);
+System.out.print("Bir cümle giriniz:");
+String cumle= input.nextLine();
+System.out.print("Büyük harflerle yazılışı"+cumle.toupperCase());
+}
+}
