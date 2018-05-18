@@ -1,0 +1,15 @@
+18.Soru:Klavyeden girilen celcius sıcaklık değerini fahrenheite çeviren program.
+
+	import java.util.Scanner;
+	public class soru18 {
+	public static void main(String[] args) {
+	
+	Scanner tara = new Scanner(System.in);
+	System.out.print("Sıcaklık değerini giriniz (ondalıklıysa ',' ile ayırınız): ");
+	double cel = tara.nextDouble();
+	double fah = (cel*1.8)+32;
+	tara.close();
+	System.out.println(cel + " ℃ = " + fah + " ℉");
+	}
+	}
+
