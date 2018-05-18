@@ -1,0 +1,24 @@
+33.soru:Klavyeden girilen bir sayı 50 ve üstünde ise yüzde 10’nun, 50’nin altında ise yüzde 25’ini bulup ekrana yazdıran programı yapınız.
+import java.util.Scanner;
+
+public class Scan2 {
+int sonuc1,sonuc2;
+    public static void main(String[] args) {
+        Scanner klavye = new Scanner(System.in);
+
+        System.out.println("sayıyı giriniz");
+        int sayi = klavye.nextInt();
+sonuc1=sayi*10/100
+sonuc2=sayi*25/100
+        
+        if(sayi<50){
+        System.out.println("sonuc2");
+        }
+        else(sayi>=50){
+        System.out.println("sonuc1");
+        }
+
+        
+
+    }
+}
