@@ -1,0 +1,36 @@
+25.Soru:Klavyeden girilen iki sayının ortak katlarının en küçüğünü hesaplayan program.
+public int bulOkek(int pSayi1, int pSayi2)
+    {
+        int say = 2;
+        int sonuc;
+        while(true)
+        {
+            if((say % pSayi1 == 0)&&(say % pSayi2 == 0))
+            {
+                sonuc = say;
+                break;
+            }
+            say++;
+        }
+        return sonuc;
+    }
+     
+    public int bulObeb(int pSayi1, int pSayi2)
+    {
+        int say;
+        int sonuc;
+        if(pSayi1>pSayi2)
+            say=pSayi1;
+            else
+            say=pSayi2;
+        while(true)
+        {
+            if((pSayi1 % say == 0)&&(pSayi2 % say == 0))
+            {
+                sonuc = say;
+                break;
+            }
+            say--;
+        }
+        return sonuc;
+    }
