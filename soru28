@@ -1,0 +1,37 @@
+28.soru:Tersinden ve düzünden okunuşu aynı olan yazılara palindrom denir. Klavyeden girilen sayının palindrom olup olmadığını söyleyen programı yazınız.
+package palindromstring;
+
+import java.util.Scanner;
+
+
+public class Palindromstring {
+
+   
+    public static void main(String[] args) {
+      Scanner al=new Scanner(System.in);
+       System.out.println("kelime giriniz : ");
+      String palindromkelime=al.nextLine();
+
+      String tersi="";
+
+int uzunluk=palindromkelime.length();
+
+for(int i=uzunluk-1;i>=0;i--)   // uzunluk değeri 0. değerden başladığı
+//için 1 çıkartılır
+{
+    tersi=tersi+palindromkelime.charAt(i); // string ifade charat ile
+//karakterler sondan başa yazılıyo
+
+}
+System.out.println("Tersi : "+tersi);  // tersini yaz
+
+if(palindromkelime.equals(tersi)) // string ifade birebir eşleşiyormu ?
+{
+    System.out.println("Palindrom");
+
+}  else
+{
+  System.out.println("Palindrom degil");
+}
+    }
+}
