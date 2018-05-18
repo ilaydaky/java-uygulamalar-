@@ -1,0 +1,21 @@
+21.Soru:Klavyeden girilen sayının faktöriyel değerini hesaplayan program.
+
+import java.util.Scanner;
+public class Soru21 {
+    public static void main(String[] args) {
+        Scanner giris=new Scanner(System.in);
+        int sayi,faktoriyel=1;
+        System.out.println("Faktöriyel alma programı");
+        System.out.println("Faktöriyeli alınacak sayıyı giriniz=");
+        sayi=giris.nextInt();
+        while(sayi<0){
+        System.out.println("Lütfen 0 dan büyük bir sayı giriniz=");
+        sayi=giris.nextInt();
+        }
+      
+        for(int i=1;i<=sayi;i++){
+        faktoriyel=faktoriyel*i;
+        }
+        System.out.println(sayi+"!="+faktoriyel);
+        }
+    }
