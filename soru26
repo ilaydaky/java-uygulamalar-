@@ -1,0 +1,33 @@
+26.soru:Klavyeden girilen tamsayı değerlerin, toplam sayısını, en büyüğünü, en küçüğünü ve ortalamasını hesaplayan programı yazınız. 
+import java.util.Scanner;
+
+public class Scan5 {
+    public static void main(String[] args) {
+        Scanner klavye = new Scanner(System.in);
+        int sayi=0, toplam=0;
+        int min, max;
+
+        int sayac=0;
+
+        while(sayi>=0){
+            toplam += sayi;
+            sayac++;
+            System.out.println("Bir sayi gir");
+            sayi = klavye.nextInt();
+                        if (sayi > max) {
+                max = sayi;
+            }
+            if (sayi < min) {
+                min = sayi;
+            }
+
+        }
+        System.out.println("toplam = " + toplam);
+
+        double ort = (double)toplam/sayac;
+        System.out.println("ort = " + ort);
+        }
+        System.out.println("MAX=" + max + "\nMIN=" + min);
+
+    }
+}
