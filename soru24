@@ -1,0 +1,32 @@
+24.Soru:Klavyeden girilen bir sayıyı ikilik sayı sisteminde ekrana yazdıran program.
+import javax.swing.JOptionPane;
+
+public class Binary {
+   
+    static String ToBinary(int number)
+        {
+            int mod;
+            String result = "";
+            while (number > 0)
+            {
+                mod = number % 2;
+                number /= 2;
+                result = String.valueOf(mod) + result;
+            }
+            return result;
+        }
+   
+
+    public static void main(String [] args){
+         
+        int sayi=Integer.parseInt(JOptionPane.showInputDialog("Sayı Giriniz: "));
+
+        int binary=Integer.parseInt(ToBinary(sayi));
+        
+          JOptionPane.showMessageDialog(null,binary);
+
+        
+       
+        
+    }
+}
