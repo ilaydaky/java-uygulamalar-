@@ -1,0 +1,24 @@
+9.Soru:Klavyeden girilen sayının  tek mi çift mi olduğunu belirten program.
+
+ 
+import java.util.*;
+public class Soru9 {
+ 
+     
+    public static void main(String[] args) {
+      
+        Scanner giris=new Scanner(System.in);
+        int sayi;
+        System.out.print("Bir sayı girin");
+        sayi=giris.nextInt();
+         
+        if (sayi %2==0) {
+            System.out.print("Sayı Çift Sayıdır");
+             
+        }
+        else {
+        System.out.print("Sayı Tek Sayıdır");
+        }
+    }
+     
+}
