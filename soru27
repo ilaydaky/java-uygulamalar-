@@ -1,0 +1,30 @@
+27.soru:Rastgele üretilen 150-350 arasındaki sayılardan tek ve çift olanların sayısını bulan programı yazınız.
+class Program
+{
+static void Main(string[] args)
+{
+int adetc = 0, toplamc = 0, toplamt = 0, adett = 0;
+int[] sayi = new int[10];
+for (int k = 0; k < 10; k++)
+{
+Console.Write("{0}. sayıyı giriniz:", k+1);
+sayi[k] = int.Parse(Console.ReadLine());
+}
+for (int k = 0; k < 10; k++)
+{
+if (sayi[k] % 2 == 0)
+{
+adetc++;
+toplamc += sayi[k];
+}
+else
+{
+adett++;
+toplamt += sayi[k];
+}
+}
+Console.WriteLine("Girilen 10 sayından {0} tanesi çift ve toplamı {1}", adetc,toplamc);
+Console.WriteLine("Girilen 10 sayından {0} tanesi tek ve toplamı {1}", adett,toplamt);
+Console.ReadKey();
+}
+}
