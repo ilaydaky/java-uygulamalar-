@@ -1,0 +1,21 @@
+35.soru:Klavyeden girlen bir sayının kaç basamaklı olduğunu hesaplayan programı yazınız.
+ public static int _basamak(int x)
+    {
+        int bs=1;// basamak sayısı
+         
+        while (x&gt;=10){
+            x=x/10;
+            bs=bs+1;
+        }
+        return bs;
+    }    
+ 
+    public static void main(String[] args) {
+ 
+        int x = 13;
+        int y = 1234;
+         
+        System.out.println("x=&gt;"+_basamak(x));
+        System.out.println("y=&gt;"+_basamak(y));
+    }
+}
